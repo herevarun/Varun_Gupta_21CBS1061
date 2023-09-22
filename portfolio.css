@@ -11,6 +11,21 @@
     z-index: 2; 
    
   }
+  #plan_overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 10, 72, 0.865); 
+    z-index: 2; 
+    transition: 1s;
+    
+
+  }
   #PP_overlay {
     position: fixed; 
     display: none; 
@@ -24,6 +39,65 @@
     z-index: 2; 
     transition: 1s;
    
+  }
+  .plans{
+    
+    
+        padding:15% 12%;
+        
+        justify-content: center;
+        align-items: center;
+        
+      
+  }
+  .premium{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .basic{
+    border:  white 2px;
+    border-style: dotted;
+    padding: 2%;
+    margin: 2%;
+
+  }
+  .standard{
+    border:  white 2px;
+    border-style: dotted;
+    padding: 2%;
+    margin: 2%;
+
+  }
+  .apply{
+    display: flex;
+    position:relative;
+    right: 0;
+  }
+  .apply input{
+    border-radius: 9999px;
+    background-color: rgb(13, 13, 88);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: .875rem;
+    padding: 0.75rem;
+    
+    margin-left: auto;
+    margin-top: 2%;
+    border:2px solid rgb(34, 34, 106);
+
+  }
+  .apply input:hover{
+    background-color: rgb(34, 34, 106);
+    cursor: pointer;
+  }
+  .classic{
+    border:  white 2px;
+    border-style: dotted;
+    padding: 2%;
+    margin: 2%;
+
   }
   .disclaimer{
     
@@ -454,9 +528,14 @@ width:3%;
 
 
 @media (max-width:620px){
+    .premium{
+        flex-direction: column;
+        
+        
+      }
 
     .nav-list{
-        height: 260px;
+        height: 326px;
         flex-direction: column;
         transition: all 0.3s ease-out ;
     }
@@ -607,10 +686,7 @@ width:3%;
   .logocontent{
     width:70%;
   }
-  .Client{
-  display: none;
-
-  }
+  
 
 }
    

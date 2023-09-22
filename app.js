@@ -18,12 +18,18 @@ burger.addEventListener('click',()=>{
 function disclaimer_on() {
     document.getElementById("Dis_overlay").style.display = "block";
   }
+  function freelance_on() {
+    document.getElementById("plan_overlay").style.display = "block";
+  }
   function PP_on() {
     document.getElementById("PP_overlay").style.display = "block";
   }
   
   function disclaimer_off() {
     document.getElementById("Dis_overlay").style.display = "none";
+  }
+  function freelance_off() {
+    document.getElementById("plan_overlay").style.display = "none";
   }
   function PP_off() {
     document.getElementById("PP_overlay").style.display = "none";
