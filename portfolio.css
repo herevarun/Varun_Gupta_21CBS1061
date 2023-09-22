@@ -530,6 +530,7 @@ width:3%;
 @media (max-width:620px){
     .premium{
         flex-direction: column;
+        font-size: 70%;
         
         
       }
@@ -628,9 +629,12 @@ width:3%;
         flex-direction: column;
     }
     .aboutsection .aboutwrite p {
-   
+            font-size: 92%;
         width: 100%;
     }
+    .langused .langwrite p{
+        
+        font-size: 92%;}
     .profilepic{
         display: unset;
         margin-left: 15%;
